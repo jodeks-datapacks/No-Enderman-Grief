@@ -1,18 +1,77 @@
 {
   "display": {
-      "icon": {
-          "item": "minecraft:enderman_spawn_egg"
-      },
+    "icon": {
+        "item": "minecraft:player_head",
+        "nbt": "{SkullOwner: {Id: [I;-243433497,1985430612,-1217137994,-269324471], Properties: {textures: [{Value: \"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODQ3YzdlYzdhNjE3MWNiOWJjZmE0Mjk1YjI2ODk4YWI1YTQ2NDQxYzc5NDFkNWFhMGJjZjMzZjQ1ZjgwMmMwMSJ9fX0=\"}]}}}"
+    },
       "title": "No Enderman Grief",
-      "description": "Endermans no longer pick up blocks",
+      "description": [
+        "",
+        {
+            "text": "Enderman no longer pick up blocks\n",
+            "color": "white"
+        },
+        {
+            "text": "\n",
+            "color": "yellow"
+        },
+        {
+            "text": "/trigger",
+            "color": "yellow"
+        },
+        {
+            "text": " help.noendermangrief\n",
+            "color": "yellow"
+        },
+        {
+            "text": "for help\n",
+            "color": "white"
+        },
+        {
+            "text": "\n",
+            "color": "green"
+        },
+        {
+            "text": "Datapack version: ",
+            "color": "dark_green"
+        },
+        {
+            "text": "v.1.0.0",
+            "color": "green"
+        },
+        {
+            "text": "\n",
+            "color": "green"
+        },
+        {
+            "text": "Game version: ",
+            "color": "dark_green"
+        },
+        {
+            "text": "1.20.1",
+            "color": "green"
+        },
+        {
+            "text": "\n",
+            "color": "green"
+        },
+        {
+            "text": "\n",
+            "color": "green"
+        },
+        {
+            "text": "modrinth.com/datapack/no-enderman-grief",
+            "color": "dark_purple"
+        }
+    ],
       "frame": "task",
       "show_toast": false,
       "announce_to_chat": false
-  },
-  "parent": "jodek:root",
-  "criteria": {
+    },
+    "parent": "jodek:mobs",
+    "criteria": {
       "tick": {
-          "trigger": "minecraft:tick"
+        "trigger": "minecraft:tick"
       }
+    }
   }
-}
