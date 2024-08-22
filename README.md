@@ -1,6 +1,6 @@
 # No Enderman Grief
 
-**Stops enderman from pickung up blocks**
+**Stops enderman from picking up blocks**
 
 ### Enabled
 
