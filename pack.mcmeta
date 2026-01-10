@@ -1,0 +1,42 @@
+{
+  "pack": {
+    "min_format": [80,0],
+    "max_format": [88,0],
+
+    "pack_format": 80,
+    "supported_formats": [80,88],
+    "description": [
+      {
+        "text": "\"No Enderman Grief\" (noendermangrief)"
+      },
+      "\n",
+      {
+        "text": "Disables that enderman can pick up blocks",
+        "color": "#aaaaaa"
+      },
+      "\n\n",
+      {
+        "text": "Version "
+      },
+      {
+        "text": "3.0.2",
+        "color": "#55ff55"
+      },
+      {
+        "text": " for Minecraft "
+      },
+      {
+        "text": "1.21.6",
+        "color": "#55ff55"
+      },
+      "\n",
+      {
+        "text": "by "
+      },
+      {
+        "text": "Jodek",
+        "color": "#ffff55"
+      }
+    ]
+  }
+}
