@@ -15,9 +15,9 @@
     },
     "title": "No Enderman Grief     ",
     "description": [
-      "",
       {
-        "text": "Enderman no longer pick up blocks\n",
+        "translate": "no_enderman_grief.description",
+        "fallback": "Enderman no longer pick up blocks\n",
         "color": "white"
       },
       {
@@ -25,19 +25,20 @@
         "color": "yellow"
       },
       {
-        "text": "Datapack version: ",
+        "translate": "jodek.datapack_version",
+        "fallback": "Datapack version: ",
         "color": "dark_green"
       },
       {
-        "text": "v3.0.2",
+        "text": "v3.0.3",
         "color": "green"
       },
       {
-        "text": "\n",
-        "color": "green"
+        "text": "\n"
       },
       {
-        "text": "Game version: ",
+        "translate": "jodek.game_version",
+        "fallback": "Game version: ",
         "color": "dark_green"
       },
       {
@@ -45,12 +46,7 @@
         "color": "green"
       },
       {
-        "text": "\n",
-        "color": "green"
-      },
-      {
-        "text": "\n",
-        "color": "green"
+        "text": "\n\n"
       },
       {
         "text": "modrinth.com/datapack/no-enderman-grief",
@@ -59,12 +55,29 @@
     ],
     "frame": "task",
     "show_toast": false,
-    "announce_to_chat": false
+    "announce_to_chat": false,
+    "hidden": true
   },
   "parent": "jodek:mobs",
   "criteria": {
     "tick": {
-      "trigger": "minecraft:tick"
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "&no_enderman_grief_advancements"
+              },
+              "score": "jodek.config"
+            },
+            "range": 1
+          }
+        ]
+      }
     }
   }
 }

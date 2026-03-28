@@ -1,19 +1,22 @@
 {
-  "project_id": "ss02V75k",
-  "curseforge_project_id": "1425804",
+  "modrinth_id": "ss02V75k",
+  "curseforge_id": "1425804",
+  "curseforge_mod_id": "1425814",
   "curseforge_slug": "no-enderman-grief",
-  "loaders": [
-    "datapack"
-  ],
+  "loaders": ["datapack"],
   "game_versions": [
     "1.21.6",
     "1.21.7",
     "1.21.8",
     "1.21.9",
     "1.21.10",
-    "1.21.11"
+    "1.21.11",
+    "26.1"
   ],
   "version_type": "release",
-  "dependencies": "",
+  "dependencies": {
+    "datapack": ["5555ff-lib(optional){modrinth:Lr1LVAwO}{curseforge:1495266}"],
+    "mod": ["5555ff-lib(optional){modrinth:Lr1LVAwO}{curseforge:1495273}"]
+  },
   "discord_role_id": "1252026000338976879"
 }

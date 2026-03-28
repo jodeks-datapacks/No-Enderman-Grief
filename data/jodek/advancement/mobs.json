@@ -1,24 +1,42 @@
 {
-    "display": {
-        "icon": {
-            "id": "minecraft:skeleton_skull"
-        },
-        "title": "Mob datapacks                      ",
-        "description": [
-            {
-                "text": "Related to mob behaviour, drops and gameplay interaction",
-                "color": "white",
-                "bold": false
-            }
-        ],
-        "frame": "goal",
-        "show_toast": false,
-        "announce_to_chat": false
+  "display": {
+    "icon": {
+      "id": "minecraft:zombie_head"
     },
-    "parent": "jodek:root",
-    "criteria": {
-        "tick": {
-            "trigger": "minecraft:tick"
-        }
+    "title": "Mobs                ",
+    "description": [
+      {
+        "translate": "jodek.advancement.mobs.description",
+        "fallback": "Related to mob behaviour, drops and gameplay interaction",
+        "color": "white",
+        "bold": false
+      }
+    ],
+    "frame": "goal",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "jodek:root",
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "&no_enderman_grief_advancements"
+              },
+              "score": "jodek.config"
+            },
+            "range": 1
+          }
+        ]
+      }
     }
+  }
 }

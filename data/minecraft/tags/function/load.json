@@ -1,6 +1,6 @@
 {
   "values": [
-    "noendermangrief:app/setup",
-    "noendermangrief:app/load_message"
+    "no_enderman_grief:app/setup",
+    "no_enderman_grief:app/load_message"
   ]
 }
