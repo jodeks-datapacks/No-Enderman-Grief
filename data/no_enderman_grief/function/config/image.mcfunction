@@ -16,7 +16,7 @@ function no_enderman_grief:image/set_image_data {\
     "No Enderman Grief",\
     {"text": "Enderman can't pick up blocks", "color": "#aaaaaa"},\
     "",\
-    [{"text": "Datapack version: ", "color": "#00a800"}, {"text": "v3.0.5", "color": "#54fc54"}],\
+    [{"text": "Datapack version: ", "color": "#00a800"}, {"text": "v3.0.6", "color": "#54fc54"}],\
     "",\
     [{"text": "By ", "color": "#fcfcfc"}, {"text": "Jodek", "color": "#fcfc54"}],\
     [{"text": "modrinth.com/datapack/no-enderman-grief", "color": "#a800a8"}],\
